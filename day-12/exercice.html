@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/exercice.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>exercice</title>
+        <style>
+            body{
+                background-color: #edf2f4;
+            }
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                text-decoration-line: underline;
+                text-decoration-color: rgb(92, 6, 173);
+            
+                
+            }
+
+            .a{
+                flex-direction: row;
+                display: flex;
+                margin: 10px;
+                text-align: center;
+                
+            }
+            .p1{
+                background-color: white;
+                margin: 2px;
+                padding: 2px;
+                height: 500px;
+                border-radius: 20px;
+                width: 250px;
+                margin: 10px;
+                
+            }
+            .p{
+                text-align: center;
+                font-size: 15px;
+            }
+            .h3{
+                color: rgb(123, 18, 209);
+                
+            }
+            .b{
+                background-color: orange;
+                border-radius: 20px;
+                width: 200px;
+                height:30px ;
+                border-color: orange;
+                position: relative;
+                top: 20px;
+            }
+            img{
+                height: 250px;
+                border-radius: 10px;
+                width: 250px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Featured Product</h1>
+        <div class="a">
+            <div class="p1">
+            <img src="./exercice_files/iphone.jpeg">
+            <h4 class="h">Smartphone X</h4>
+        <p class="p">Latest generation samartphone with AI camera and stunning disply</p>
+        <h3 class="h3">$999</h3>
+        <button class="b">Buy Now</button>
+         </div>
+           <div class="p1">
+             <img src="./exercice_files/laptop.jpeg">
+        <h4 class="h">Laptop pro</h4>
+        <p class="p">Powerful and lightweight Laptop for professionals on the go</p>
+        <h3 class="h3">$1499</h3>
+        <button class="b">Buy Now</button>
+         </div>
+
+           <div class="p1">
+             <img src="./exercice_files/smart watch.jpeg">
+        <h4 class="h">Smartwatch S</h4>
+        <p class="p">Track your fitness and stay connected with this sleek smartwatch.</p>
+        <h3 class="h3">$299</h3>
+        <button class="b">Buy Now</button>
+         </div>
+
+        <div class="p1">
+             <img src="./exercice_files/headphones.jpeg">
+        <h4 class="h">Headphones Z</h4>
+        <p class="p">Immesive sound quality with noice-cancelling technology.</p>
+        <h3 class="h3">$199</h3>
+        <button class="b">Buy Now</button>
+         </div>
+         </div>
+    
+    
+
+         <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

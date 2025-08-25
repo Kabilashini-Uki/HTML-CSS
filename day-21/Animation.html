@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .image{
+            background-color: black;
+            height: 300px;
+            width: 300px;
+            margin: 0px;
+            animation-name: image;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+
+        }
+        @keyframes image{
+            0%{
+                background-color: aquamarine;
+                transform: translate(0px,0px)
+               
+            }
+            25%{
+                background-color: blue;
+             
+                
+            }
+            50%{
+                background-color: aqua;
+             
+
+            }
+            75%{
+                 background-color: purple;
+             
+                 
+
+            }
+            100%{
+                background-color: bisque;
+                   transform: translate(700px,700px);
+            
+            }   
+
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="image"></div>
+    
+</body>
+</html>

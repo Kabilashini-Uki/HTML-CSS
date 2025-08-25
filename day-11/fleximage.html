@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            .s{
+                background-color: aquamarine;
+                height: 200px;
+                width: 500px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                font-size: 100px;
+                position: static;
+                 margin-bottom: 30px;
+            }
+            .t{
+                 background-color: rgb(8, 65, 46);
+                height: 200px;
+                width: 500px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                font-size: 100px;
+                margin-bottom: 30px;
+                position: relative;
+                z-index: 2;
+                bottom: 90px;
+                
+            }
+            .m{
+                 background-color: blueviolet;
+                height: 200px;
+                width: 500px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                font-size: 100px;
+                 margin-bottom: 30px;
+                 position: relative;
+                z-index: 1;
+                bottom: 150px;
+                
+            }
+            .a{
+                background-color: grey;
+                width: 100%;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 300px;
+            }
+            .absolute-box{
+                background-color: blueviolet;
+                width: 300px;
+                height: 150px;
+                position: absolute;
+                left: 300px;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                color: azure;
+                text-align: center;
+                  display: flex;
+            }
+            .fixed{
+                background-color: aqua;
+                width: 500px;
+                height: 200px;
+                color: white;
+                font-size: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                bottom: 100px;
+                left:600px;
+
+            }
+            
+        </style>
+    </head>
+    <body>
+    <div class="s">static</div>
+    <div class="t">Relative</div>
+    <div class="m">Relative 1</div>
+
+    <div class="a">
+        <div class="absolute-box">absolute-box</div>
+        <dev class="fixed">fixed</dev>
+    </div>
+    </body>
+</html>

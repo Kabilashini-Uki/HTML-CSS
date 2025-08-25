@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Merge colum and rows</title>
+    </head>
+
+    <body>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th colspan="2">contect</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Alice</td>
+                <td>Email</td>
+                <td>alice@example.com</td>
+            </tr>
+            <tr>
+                <td>phone</td>
+                <td>123-456-7890</td>
+            </tr>
+         </table>
+        </body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>image</title>
+    </head>
+   <body>
+    <form>
+        <label for="fruites"></label>
+        <input type="option value=" name="fruit" value="apple"></option>
+        <option
+    </form>
+   </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skew practice</title>
+    <style>
+       .image{
+        background-color: aquamarine;
+        height: 250px;
+        width: 250px;
+        margin: 20px;
+        border-radius: 20px;
+       
+       }
+       .image3{
+        background-color: aquamarine;
+        height: 250px;
+        width: 250px;
+        margin: 20px;
+         border-radius: 20px;
+       
+       }
+       .image2{
+        background-color: aquamarine;
+        height: 250px;
+        width: 250px;
+        margin: 20px;
+         border-radius: 20px;
+       
+       }
+       .image{
+        display: flex;
+        transition: 0.3s ease;
+        }
+        .image:hover{
+            transform: translate(100px);
+            background-color: blanchedalmond;
+        }
+        .image2{
+            display: flex;
+            transition: 0.3s ease;
+        }
+        .image2:hover{
+            transform: scale(0.5);
+            background-color: blanchedalmond;
+
+        }
+        .image3{
+            display: flex;
+            transition: 0.3s ease;
+        }
+        .image3:hover{
+            transform: skew(45deg);
+            background-color: blanchedalmond;
+        }
+        .all{
+            display: flex;
+            flex-direction: column;
+        }
+        .top{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+    <div class="top">
+    <div class="image"></div>
+    <div class="image"></div>
+     <div class="image"></div>
+    </div>
+    <div class="top">
+     <div class="image2"></div>
+    <div class="image2"></div>
+     <div class="image2"></div>
+    </div>
+    <div class="top">
+    <div class="image3"></div>
+    <div class="image3"></div>
+     <div class="image3"></div>
+    </div>
+    </div>
+    
+
+</body>
+</html>
