@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo element and class</title>
+    <style>
+        h1{
+            border: 2px solid;
+            width: 100px;
+
+        }
+        h1:hover{
+            background-color:aquamarine;
+            color:cornflowerblue;
+            border-color: blueviolet;
+
+        }
+        input{
+            border: none;
+            height: 40px;
+            
+        }
+        input:focus{
+            border: 5px solid red;
+        }
+        li{
+            list-style: none;
+            display: flex;
+            margin: 20px;
+            font-size: 40px;
+        }
+        ul{
+            display: flex;
+           
+        }
+        li:active{
+            border: none;
+            border-bottom: 3px solid red;
+            
+        }
+        li:first-child{
+            font-weight: bold;
+            color: red;
+        }
+        li:last-child{
+             font-weight: bold;
+            color: red;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>KAbi</h1>
+    <input type="text" placeholder="Here">
+    <ul>
+    <li>Name</li>
+    <li>class</li>
+    <li>active</li>
+    <li>grade</li>
+    </ul>
+    
+</body>
+</html>
