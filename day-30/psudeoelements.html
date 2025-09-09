@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudeoelements</title>
+    <style>
+        .title::before{
+            content: "\1F525";
+        }
+        .title::after{
+            content: "\2705";
+            
+        }
+        p{
+            font-size: 30px;
+        }
+        p::first-letter{
+            font-size: 2em;
+            color: purple;
+            font-weight: bold;
+        }
+        p::first-line{
+            text-transform: uppercase;
+            background-color: rgb(250, 236, 236);
+        }
+        p::selection{
+            background-color: rgb(243, 174, 213);
+            color: gray;
+        }
+        ul{
+            font-size: 30px;
+        }
+        li::marker{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Hello World</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis a animi quis quos modi, cumque, necessitatibus nihil asperiores culpa ratione aut sapiente saepe laborum odit ab debitis vel quaerat quae quisquam nemo! Harum dolorum voluptatum pariatur ducimus et aspernatur veritatis! Ut doloremque eligendi, sapiente aspernatur dicta velit molestias necessitatibus sit?</p>
+    <ul>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+    </ul>
+</body>
+</html>
