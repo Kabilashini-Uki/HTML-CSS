@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: white;    
+            border: none;
+            border-right: 1px solid white;
+            padding: 25px;    
+        }
+
+        ul {
+            list-style: none;
+            display: flex; 
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: #023047;
+            height: 70px;
+            width: 90%;
+            display: flex;
+            font-size: 20px;
+            margin-left: 60px;
+            position: absolute;
+            z-index: 1;
+            align-items: center;
+        }
+
+        button {
+            margin-left: auto;
+            height: 60px;
+            width: 300px;
+            font-size: 15px;
+            background-color: #faedcd;
+            border: none;
+            cursor: pointer;
+        }
+
+        a:hover {
+            border-bottom: 7px solid white;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+
+        /* Submenu styles */
+        .about {
+            position: relative; /* important for submenu positioning */
+        }
+
+        .sub {
+            display: none;  /* hidden by default */
+            position: absolute;
+            top: 70px; /* place below nav */
+            left: 0;
+            background-color: #023047;
+            padding: 10px 0;
+            min-width: 180px;
+        }
+
+        .sub ul {
+            flex-direction: column; /* stack vertically */
+        }
+
+        .sub ul li {
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .sub ul li:hover {
+            background-color: #264653;
+        }
+
+        /* Show submenu on hover */
+        .about:hover .sub {
+            display: block;
+        }
+
+        /* Image section */
+        .image {
+            display: flex;
+            gap: 20px;
+            margin-top: 500px; /* push below navbar */
+            justify-content: center;
+        }
+
+        img {
+            height: 450px;
+            width: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="about">
+                    <a href="#">About</a>
+                    <div class="sub">
+                        <ul class="rob">
+                            <li>Submenu 1</li>
+                            <li>Dropdown menu</li>
+                            <li>Submenu 2</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button>Free Consultation</button>
+        </div>
+
+        <div class="image">
+            <img src="/home/uki-dsa-07/Desktop/H,C/day-29/pexels-karolina-grabowska-7680687.jpg" alt="Image 1">
+            <img src="/home/uki-dsa-07/Desktop/H,C/day-29/pexels-mikhail-nilov-7731399.jpg" alt="Image 2">
+            <img src="/home/uki-dsa-07/Desktop/H,C/day-29/pexels-tima-miroshnichenko-7567426.jpg" alt="Image 3">
+        </div>
+    </div>
+</body>
+</html>
